@@ -1,21 +1,15 @@
 <%- include('header') -%>
-
-<header class='header'>
-  <img class='header__img' src='header.jpg'>
-
+<header id='header' class='col-md-16'>
+  <img is='header__img' class='col-md-12' src='header.jpg'>
   <h1 class='header_title'><%= title %></h1>
 </header>
-
-<main class='main'>
-
-  <div class='article'>
+<main id='main' class='col-md-12'>
+  <div id='article' class='col-md-6'>
     <article>
-
         <div> <%- html %>
         </div>
     </article>
   </div>
-  <a href='/'> Til baka </a>
+  <a href='/'> Til baka</a>
 </main>
-
 <%- include('footer') -%>
