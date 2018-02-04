@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+border-sizing:border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* fontar
+----------------------------------------------- */
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url('fonts/PlayfairDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('fonts/Poppins-Regular.ttf');
+}
+
+#main {
+	position: relative;
+	width: 100%;
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	overflow:auto;
+	height:auto;
+}

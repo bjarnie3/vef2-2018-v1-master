@@ -1,0 +1,27 @@
+<%- include('header') -%>
+<header>
+  <img class='header__img' alt='sdf' src="header.jpg" ></img>
+  <h1 class="header_title"><%= title %></h1>
+</header>
+
+<main class='main'>
+  <div class='articles'>
+    <% greinaSafn.forEach((grein) => {%>
+      <div class='article'>
+        <a href= <%= grein.meta.slug %>
+        <p> <%= grein.meta.slug %></p>
+        <%if(grein.meta.image === undefined){ %>
+          <div class='article__NoImg'></div>
+          <%} else {%>
+            <div class='article_img'>
+            <img src=  <%= grein.meta.image %> />
+            </div>
+          <% } %>
+         </div>
+         <p> <%= grein.meta.date.getDay() %>.<%= grein.meta.date.getMonth() %>.<%= grein.meta.date.getYear() %></p>
+      </div>
+      <%})%>
+  </div>
+</main>
+
+<%- include('footer') -%>
