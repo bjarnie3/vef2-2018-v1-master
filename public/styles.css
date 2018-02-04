@@ -41,13 +41,10 @@ border-sizing:border-box;
   src: url('fonts/Poppins-Regular.ttf');
 }
 
-#main{
+#articles{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#articles{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
   max-width: 26rem;
@@ -58,13 +55,6 @@ border-sizing:border-box;
   padding: 0;
 }
 
-#article{
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    background-color: #fff;
-    max-width: 26rem;
-    min-width: 15rem;
-    width: 30%;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    padding: 0;
+.article_img{
+    width: 100%;
 }

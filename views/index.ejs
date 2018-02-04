@@ -3,21 +3,19 @@
   <img id='header__img' class='col-md-12' alt='sdf' src="header.jpg" ></img>
   <h1 class="header_title"><%= title %></h1>
 </header>
-<main id='main' class='col-md-16'>
+<main id='Container' class='col-md-16'>
   <div id='articles' class='col-md-12'>
     <% greinaSafn.forEach((grein) => {%>
         <a href= <%= grein.meta.slug %>
         <p> <%= grein.meta.slug %></p>
         <%if(grein.meta.image === undefined){ %>
-          <div id='article__NoImg'></div>
           <%} else {%>
             <div class='article_img'>
                 <img src=  <%= grein.meta.image %> />
             </div>
           <% } %>
-
          <p> <%= grein.meta.date.getDay() %>.<%= grein.meta.date.getMonth() %>.<%= grein.meta.date.getYear() %></p>
-      </div>
+  </div>
       <%})%>
   </div>
 </main>
